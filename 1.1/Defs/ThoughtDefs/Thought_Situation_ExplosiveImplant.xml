@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>FearOfExplosiveImplant</defName>
+    <workerClass>Explosive_Implant.ThoughtWorker_Hediff_ExplosiveImplant</workerClass>
+    <hediff>ExplosiveImplant</hediff>
+    <stages>
+      <li>
+        <label>has an explosive implant</label>
+        <description>They have done something to my head!</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

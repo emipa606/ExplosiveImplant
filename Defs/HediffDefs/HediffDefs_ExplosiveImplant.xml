@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef Class="Explosive_Implant.HediffDefs_ExplosiveImplant" ParentName="ImplantHediffBase">
+    <defName>ExplosiveImplant</defName>
+    <label>explosive implant</label>
+    <labelNoun>an explosive implant</labelNoun>
+    <spawnThingOnRemoved>ExplosiveImplant</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <partEfficiencyOffset>0</partEfficiencyOffset>
+      </li>
+    </stages>
+    <hediffClass>Explosive_Implant.HediffWithComps_Explosion</hediffClass>
+    <damageDef>Bomb</damageDef>
+    <explosionRadius>4.0</explosionRadius>
+  </HediffDef>
+</Defs>
