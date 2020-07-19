@@ -5,5 +5,9 @@
   <InstallExplosiveImplant.description>Installs explosive implant.</InstallExplosiveImplant.description>
   <InstallExplosiveImplant.jobString>Installing explosive implant.</InstallExplosiveImplant.jobString>
 
+  <InstallAdvancedExplosiveImplant.label>install advanced explosive implant</InstallAdvancedExplosiveImplant.label>
+  <InstallAdvancedExplosiveImplant.description>Installs advanced explosive implant.</InstallAdvancedExplosiveImplant.description>
+  <InstallAdvancedExplosiveImplant.jobString>Installing advanced explosive implant.</InstallAdvancedExplosiveImplant.jobString>
+
 
 </LanguageData>

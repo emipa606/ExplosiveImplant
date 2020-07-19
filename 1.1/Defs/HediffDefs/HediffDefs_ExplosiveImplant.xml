@@ -15,4 +15,19 @@
     <damageDef>Bomb</damageDef>
     <explosionRadius>4.0</explosionRadius>
   </HediffDef>
+  <HediffDef Class="Explosive_Implant.HediffDefs_ExplosiveImplant" ParentName="ImplantHediffBase">
+    <defName>AdvancedExplosiveImplant</defName>
+    <label>advanced explosive implant</label>
+    <description>advanced explosive implant</description>
+    <labelNoun>an advanced explosive implant</labelNoun>
+    <spawnThingOnRemoved>AdvancedExplosiveImplant</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <partEfficiencyOffset>0</partEfficiencyOffset>
+      </li>
+    </stages>
+    <hediffClass>Explosive_Implant.HediffWithComps_Explosion</hediffClass>
+    <damageDef>Bomb</damageDef>
+    <explosionRadius>8.0</explosionRadius>
+  </HediffDef>
 </Defs>

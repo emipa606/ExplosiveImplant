@@ -5,5 +5,9 @@
   <MakeExplosiveImplant.description>Make an explosive implant.</MakeExplosiveImplant.description>
   <MakeExplosiveImplant.jobString>Making an explosive implant.</MakeExplosiveImplant.jobString>
 
+  <MakeAdvancedExplosiveImplant.label>Make an advanced explosive implant</MakeAdvancedExplosiveImplant.label>
+  <MakeAdvancedExplosiveImplant.description>Make an advanced explosive implant.</MakeAdvancedExplosiveImplant.description>
+  <MakeAdvancedExplosiveImplant.jobString>Making an advanced explosive implant.</MakeAdvancedExplosiveImplant.jobString>
+
 
 </LanguageData>

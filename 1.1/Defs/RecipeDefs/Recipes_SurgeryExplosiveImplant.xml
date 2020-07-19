@@ -48,4 +48,52 @@
     </appliedOnFixedBodyParts>
     <addsHediff>ExplosiveImplant</addsHediff>
   </RecipeDef>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallAdvancedExplosiveImplant</defName>
+    <label>install advanced explosive implant</label>
+    <description>Installs advanced explosive implant.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing advanced explosive implant.</jobString>
+    <surgerySuccessChanceFactor>1</surgerySuccessChanceFactor>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <recipeUsers>
+      <li>Human</li>
+      <li>Cat</li>
+    </recipeUsers>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <workAmount>5700</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AdvancedExplosiveImplant</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AdvancedExplosiveImplant</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AdvancedExplosiveImplant</addsHediff>
+  </RecipeDef>
 </Defs>

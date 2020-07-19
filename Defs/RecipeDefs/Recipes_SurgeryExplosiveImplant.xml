@@ -1,13 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <RecipeDef Abstract="True" Name="SurgeryFlesh">
-    <effectWorking>Surgery</effectWorking>
-    <soundWorking>Recipe_Surgery</soundWorking>
-    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
-    <workSkill>Medicine</workSkill>
-    <workSkillLearnFactor>16</workSkillLearnFactor>
-    <!--<dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>-->
-  </RecipeDef>
   <RecipeDef Name="SurgeryBasic" ParentName="SurgeryFlesh" Abstract="True">
     <surgerySuccessChanceFactor>1</surgerySuccessChanceFactor>
     <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
@@ -57,5 +49,46 @@
       <li>Brain</li>
     </appliedOnFixedBodyParts>
     <addsHediff>ExplosiveImplant</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryBasic">
+    <defName>InstallAdvancedExplosiveImplant</defName>
+    <label>install advanced explosive implant</label>
+    <description>Installs advanced explosive implant.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing advanced explosive implant.</jobString>
+    <workAmount>5700</workAmount>
+    <skillRequirements>
+      <Medicine>9</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AdvancedExplosiveImplant</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AdvancedExplosiveImplant</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>AdvancedExplosiveImplant</addsHediff>
   </RecipeDef>
 </Defs>
