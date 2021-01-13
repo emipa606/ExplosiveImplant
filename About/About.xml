@@ -20,26 +20,45 @@
   <loadAfter>
     <li>brrainz.harmony</li>
   </loadAfter>
-  <description>Update of ma1tas mod for RimWorld 1.1
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+Update of ma1tas mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1816673839
-
-[img]https://i.imgur.com/GYswkZ7.png[/img]
-
-Support-chat:
-https://invite.gg/mlie
-
-Non-steam version:
-https://github.com/emipa606/ExplosiveImplant
 
 - Lowered the value of the implant as 800 was a bit high
 - The explosion should now always remove the pawns head since the implant is in the brain
-	
---- Original Description ---
-V1.0.2
-This mod adds an explosive brain implant.
-Detonate it at will.
-Craft it at the fabrication bench when the research Bionics is completed.
+- Added an advanced implant with twice the blast-radius
 
+[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+
+[table]
+	[tr]
+		[td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+		[td][url=https://github.com/emipa606/ExplosiveImplant][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+	[/tr]
+[/table]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2288125657][img]https://i.imgur.com/kNldlMg.png[/img][/url]
+	
+[img]https://i.imgur.com/NOW7jU1.png[/img]
+
+V1.0.2
+		This mod adds an explosive brain implant.
+		Detonate it at will.
+		Craft it at the fabrication bench when the research Bionics is completed.
+	
 Note: This mod is still in development, if you use it on an existant save,
-don't forget to keep a save from before the mod installation.</description>
+don't forget to keep a save from before the mod installation.
+
+
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
 </ModMetaData>
+
