@@ -18,7 +18,16 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs</xpath>
           <value>
-            <AchievementsExpanded.AchievementDef>
+            <AchievementsExpanded.AchievementDef Name="Mlie_AchievementParent" Abstract="true">
+              <bgtexPath>Achievements/AchievmentsBG</bgtexPath>
+              <tab>Mlie_Continued</tab>
+            </AchievementsExpanded.AchievementDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.AchievementDef ParentName="Mlie_AchievementParent">
               <defName>EI_NowhereToRun</defName>
               <label>Nowhere To Run</label>
               <description>Have one pawn fitted with an Explosive Implant</description>
@@ -28,14 +37,13 @@
               </tracker>
               <texPath>Achievements/EI_NowhereToRun</texPath>
               <points>10</points>
-              <tab>Mlie_Continued</tab>
             </AchievementsExpanded.AchievementDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>Defs</xpath>
           <value>
-            <AchievementsExpanded.AchievementDef>
+            <AchievementsExpanded.AchievementDef ParentName="Mlie_AchievementParent">
               <defName>EI_NowhereToHide</defName>
               <label>Nowhere To Hide</label>
               <description>Have one pawn fitted with an Advanced Explosive Implant</description>
@@ -45,7 +53,6 @@
               </tracker>
               <texPath>Achievements/EI_NowhereToHide</texPath>
               <points>20</points>
-              <tab>Mlie_Continued</tab>
             </AchievementsExpanded.AchievementDef>
           </value>
         </li>
