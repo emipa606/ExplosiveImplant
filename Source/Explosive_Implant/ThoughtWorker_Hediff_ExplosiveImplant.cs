@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using RimWorld;
+﻿using RimWorld;
 using Verse;
 
 namespace Explosive_Implant
 {
-    class ThoughtWorker_Hediff_ExplosiveImplant : ThoughtWorker_Hediff
+    internal class ThoughtWorker_Hediff_ExplosiveImplant : ThoughtWorker_Hediff
     {
         protected override ThoughtState CurrentStateInternal(Pawn p)
         {
-            ThoughtState t = base.CurrentStateInternal(p);
+            var t = base.CurrentStateInternal(p);
             /*
             if(!t.Equals(ThoughtState.Inactive))
             {

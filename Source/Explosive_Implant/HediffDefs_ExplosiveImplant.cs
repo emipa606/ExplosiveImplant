@@ -20,11 +20,6 @@ or otherwise to promote the sale, use or other dealings in this Software without
 from the <copyright holders>.
 */
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Verse;
 
 namespace Explosive_Implant

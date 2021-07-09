@@ -20,49 +20,19 @@ or otherwise to promote the sale, use or other dealings in this Software without
 from the <copyright holders>.
 */
 
-using System.Linq;
-using RimWorld;
+using System.Reflection;
+using HarmonyLib;
 using Verse;
 
 namespace Explosive_Implant
 {
-    internal class HediffWithComps_Explosion : HediffWithComps
+    [StaticConstructorOnStartup]
+    internal class main
     {
-        private bool HediffWithComps_toDoAtBeginning;
-
-        public override void Tick()
+        static main()
         {
-            base.Tick();
-
-            if (HediffWithComps_toDoAtBeginning)
-            {
-                return;
-            }
-
-            GlobalVariables.list_obj.Add(this);
-            HediffWithComps_toDoAtBeginning = true;
+            var harmony = new Harmony("com.ma1ta.Explosive.Implant");
+            harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
-
-        public void Explode()
-        {
-            GenExplosion.DoExplosion(host.Position, host.Map, ExplosiveImplant_Def.explosionRadius,
-                ExplosiveImplant_Def.damageDef, host);
-
-            var dInfo = new DamageInfo(ExplosiveImplant_Def.damageDef, 100.0f);
-            host.Kill(dInfo);
-            if (host.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).Any())
-            {
-                host.health.AddHediff(HediffDefOf.MissingBodyPart,
-                    host.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).First());
-            }
-        }
-
-        #region Properties
-
-        public HediffDefs_ExplosiveImplant ExplosiveImplant_Def => def as HediffDefs_ExplosiveImplant;
-
-        public Pawn host => pawn;
-
-        #endregion Properties
     }
 }
