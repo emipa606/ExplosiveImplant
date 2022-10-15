@@ -1,27 +1,26 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace Explosive_Implant
+namespace Explosive_Implant;
+
+internal class ThoughtWorker_Hediff_ExplosiveImplant : ThoughtWorker_Hediff
 {
-    internal class ThoughtWorker_Hediff_ExplosiveImplant : ThoughtWorker_Hediff
+    protected override ThoughtState CurrentStateInternal(Pawn p)
     {
-        protected override ThoughtState CurrentStateInternal(Pawn p)
+        var t = base.CurrentStateInternal(p);
+        /*
+        if(!t.Equals(ThoughtState.Inactive))
         {
-            var t = base.CurrentStateInternal(p);
-            /*
-            if(!t.Equals(ThoughtState.Inactive))
+            if(p.IsPrisoner)
             {
-                if(p.IsPrisoner)
-                {
-                    return t;
-                }
-                else
-                {
-                    return ThoughtState.Inactive;
-                }
+                return t;
             }
-            */
-            return t;
+            else
+            {
+                return ThoughtState.Inactive;
+            }
         }
+        */
+        return t;
     }
 }

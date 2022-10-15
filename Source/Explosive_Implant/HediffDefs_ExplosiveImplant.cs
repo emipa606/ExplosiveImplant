@@ -22,11 +22,10 @@ from the <copyright holders>.
 
 using Verse;
 
-namespace Explosive_Implant
+namespace Explosive_Implant;
+
+public class HediffDefs_ExplosiveImplant : HediffDef
 {
-    public class HediffDefs_ExplosiveImplant : HediffDef
-    {
-        public DamageDef damageDef;
-        public float explosionRadius = 5.0f;
-    }
+    public DamageDef damageDef;
+    public float explosionRadius = 5.0f;
 }

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/MainButtonDef[defName="Achievements"]</xpath>
+    <success>Always</success>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.AchievementTabDef>
+              <defName>Mlie_Continued</defName>
+              <label>Continued Mods</label>
+            </AchievementsExpanded.AchievementTabDef>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <success>Always</success>
+          <xpath>/Defs/AchievementsExpanded.AchievementDef[@Name="Mlie_AchievementParent"]</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs</xpath>
+            <value>
+              <AchievementsExpanded.AchievementDef Name="Mlie_AchievementParent" Abstract="true">
+                <bgtexPath>Achievements/AchievmentsBG</bgtexPath>
+                <tab>Mlie_Continued</tab>
+              </AchievementsExpanded.AchievementDef>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.AchievementDef ParentName="Mlie_AchievementParent">
+              <defName>EI_NowhereToRun</defName>
+              <label>Nowhere To Run</label>
+              <description>Have one pawn fitted with an Explosive Implant</description>
+              <tracker Class="AchievementsExpanded.HediffTracker">
+                <def>ExplosiveImplant</def>
+                <count>1</count>
+              </tracker>
+              <texPath>Achievements/EI_NowhereToRun</texPath>
+              <points>10</points>
+            </AchievementsExpanded.AchievementDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.AchievementDef ParentName="Mlie_AchievementParent">
+              <defName>EI_NowhereToHide</defName>
+              <label>Nowhere To Hide</label>
+              <description>Have one pawn fitted with an Advanced Explosive Implant</description>
+              <tracker Class="AchievementsExpanded.HediffTracker">
+                <def>AdvancedExplosiveImplant</def>
+                <count>1</count>
+              </tracker>
+              <texPath>Achievements/EI_NowhereToHide</texPath>
+              <points>20</points>
+            </AchievementsExpanded.AchievementDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

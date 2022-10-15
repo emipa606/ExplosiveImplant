@@ -24,15 +24,14 @@ using System.Reflection;
 using HarmonyLib;
 using Verse;
 
-namespace Explosive_Implant
+namespace Explosive_Implant;
+
+[StaticConstructorOnStartup]
+internal class Main
 {
-    [StaticConstructorOnStartup]
-    internal class main
+    static Main()
     {
-        static main()
-        {
-            var harmony = new Harmony("com.ma1ta.Explosive.Implant");
-            harmony.PatchAll(Assembly.GetExecutingAssembly());
-        }
+        var harmony = new Harmony("com.ma1ta.Explosive.Implant");
+        harmony.PatchAll(Assembly.GetExecutingAssembly());
     }
 }

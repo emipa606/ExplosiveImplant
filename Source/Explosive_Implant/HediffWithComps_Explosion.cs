@@ -24,45 +24,44 @@ using System.Linq;
 using RimWorld;
 using Verse;
 
-namespace Explosive_Implant
+namespace Explosive_Implant;
+
+internal class HediffWithComps_Explosion : HediffWithComps
 {
-    internal class HediffWithComps_Explosion : HediffWithComps
+    private bool HediffWithComps_toDoAtBeginning;
+
+    public override void Tick()
     {
-        private bool HediffWithComps_toDoAtBeginning;
+        base.Tick();
 
-        public override void Tick()
+        if (HediffWithComps_toDoAtBeginning)
         {
-            base.Tick();
-
-            if (HediffWithComps_toDoAtBeginning)
-            {
-                return;
-            }
-
-            GlobalVariables.list_obj.Add(this);
-            HediffWithComps_toDoAtBeginning = true;
+            return;
         }
 
-        public void Explode()
-        {
-            GenExplosion.DoExplosion(host.Position, host.Map, ExplosiveImplant_Def.explosionRadius,
-                ExplosiveImplant_Def.damageDef, host);
-
-            var dInfo = new DamageInfo(ExplosiveImplant_Def.damageDef, 100.0f);
-            host.Kill(dInfo);
-            if (host.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).Any())
-            {
-                host.health.AddHediff(HediffDefOf.MissingBodyPart,
-                    host.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).First());
-            }
-        }
-
-        #region Properties
-
-        public HediffDefs_ExplosiveImplant ExplosiveImplant_Def => def as HediffDefs_ExplosiveImplant;
-
-        public Pawn host => pawn;
-
-        #endregion Properties
+        GlobalVariables.list_obj.Add(this);
+        HediffWithComps_toDoAtBeginning = true;
     }
+
+    public void Explode()
+    {
+        GenExplosion.DoExplosion(host.Position, host.Map, ExplosiveImplant_Def.explosionRadius,
+            ExplosiveImplant_Def.damageDef, host);
+
+        var dInfo = new DamageInfo(ExplosiveImplant_Def.damageDef, 100.0f);
+        host.Kill(dInfo);
+        if (host.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).Any())
+        {
+            host.health.AddHediff(HediffDefOf.MissingBodyPart,
+                host.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).First());
+        }
+    }
+
+    #region Properties
+
+    public HediffDefs_ExplosiveImplant ExplosiveImplant_Def => def as HediffDefs_ExplosiveImplant;
+
+    public Pawn host => pawn;
+
+    #endregion Properties
 }
