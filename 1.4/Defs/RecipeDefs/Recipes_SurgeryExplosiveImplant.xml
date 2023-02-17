@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <RecipeDef ParentName="SurgeryFlesh">
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
     <defName>InstallExplosiveImplant</defName>
     <label>install explosive implant</label>
     <description>Installs explosive implant.</description>
-    <workerClass>Recipe_InstallImplant</workerClass>
     <jobString>Installing explosive implant.</jobString>
     <surgerySuccessChanceFactor>1</surgerySuccessChanceFactor>
     <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
@@ -48,11 +47,10 @@
     </appliedOnFixedBodyParts>
     <addsHediff>ExplosiveImplant</addsHediff>
   </RecipeDef>
-  <RecipeDef ParentName="SurgeryFlesh">
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
     <defName>InstallAdvancedExplosiveImplant</defName>
     <label>install advanced explosive implant</label>
     <description>Installs advanced explosive implant.</description>
-    <workerClass>Recipe_InstallImplant</workerClass>
     <jobString>Installing advanced explosive implant.</jobString>
     <surgerySuccessChanceFactor>1</surgerySuccessChanceFactor>
     <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
@@ -95,5 +93,39 @@
       <li>Brain</li>
     </appliedOnFixedBodyParts>
     <addsHediff>AdvancedExplosiveImplant</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>UnInstallExplosiveImplant</defName>
+    <label>uninstall explosive implant</label>
+    <description>Uninstalls explosive implant.</description>
+    <jobString>Uninstalling explosive implant.</jobString>
+    <surgerySuccessChanceFactor>1</surgerySuccessChanceFactor>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <recipeUsers>
+      <li>Human</li>
+      <li>Cat</li>
+    </recipeUsers>
+    <workAmount>3700</workAmount>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <removesHediff>ExplosiveImplant</removesHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>UnInstallAdvancedExplosiveImplant</defName>
+    <label>uninstall advanced explosive implant</label>
+    <description>Uninstalls advanced explosive implant.</description>
+    <jobString>Uninstalling advanced explosive implant.</jobString>
+    <surgerySuccessChanceFactor>1</surgerySuccessChanceFactor>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <recipeUsers>
+      <li>Human</li>
+      <li>Cat</li>
+    </recipeUsers>
+    <workAmount>5700</workAmount>
+    <skillRequirements>
+      <Medicine>12</Medicine>
+    </skillRequirements>
+    <removesHediff>AdvancedExplosiveImplant</removesHediff>
   </RecipeDef>
 </Defs>
