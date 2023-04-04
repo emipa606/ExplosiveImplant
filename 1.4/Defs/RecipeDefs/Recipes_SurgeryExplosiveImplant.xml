@@ -94,6 +94,53 @@
     </appliedOnFixedBodyParts>
     <addsHediff>AdvancedExplosiveImplant</addsHediff>
   </RecipeDef>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallKnockoutImplant</defName>
+    <label>install knockout implant</label>
+    <description>Installs knockout implant.</description>
+    <jobString>Installing knockout implant.</jobString>
+    <surgerySuccessChanceFactor>1</surgerySuccessChanceFactor>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <recipeUsers>
+      <li>Human</li>
+      <li>Cat</li>
+    </recipeUsers>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <workAmount>4100</workAmount>
+    <skillRequirements>
+      <Medicine>7</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>KnockoutImplant</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>KnockoutImplant</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>KnockoutImplant</addsHediff>
+  </RecipeDef>
   <RecipeDef ParentName="SurgeryRemoveImplantBase">
     <defName>UnInstallExplosiveImplant</defName>
     <label>uninstall explosive implant</label>
@@ -127,5 +174,22 @@
       <Medicine>12</Medicine>
     </skillRequirements>
     <removesHediff>AdvancedExplosiveImplant</removesHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>UnInstallKnockoutImplant</defName>
+    <label>uninstall knockout implant</label>
+    <description>Uninstalls knockout implant.</description>
+    <jobString>Uninstalling knockout implant.</jobString>
+    <surgerySuccessChanceFactor>1</surgerySuccessChanceFactor>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <recipeUsers>
+      <li>Human</li>
+      <li>Cat</li>
+    </recipeUsers>
+    <workAmount>4100</workAmount>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <removesHediff>KnockoutImplant</removesHediff>
   </RecipeDef>
 </Defs>

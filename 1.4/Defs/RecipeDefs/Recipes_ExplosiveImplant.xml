@@ -110,4 +110,59 @@
     </skillRequirements>
     <workSkill>Crafting</workSkill>
   </RecipeDef>
+  <RecipeDef>
+    <defName>MakeKnockoutImplant</defName>
+    <label>Make a knockout implant</label>
+    <description>Make a knockout implant.</description>
+    <jobString>Making a knockout implant.</jobString>
+    <workAmount>6000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>ComponentIndustrial</li>
+        <li>Neutroamine</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <KnockoutImplant>1</KnockoutImplant>
+    </products>
+    <researchPrerequisite>Bionics</researchPrerequisite>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
 </Defs>

@@ -23,6 +23,7 @@ from the <copyright holders>.
 using System.Linq;
 using RimWorld;
 using Verse;
+using Verse.Sound;
 
 namespace Explosive_Implant;
 
@@ -45,6 +46,15 @@ internal class HediffWithComps_Explosion : HediffWithComps
 
     public void Explode()
     {
+        if (ExplosiveImplant_Def.damageDef == DamageDefOf.Stun)
+        {
+            FleckMaker.ThrowMicroSparks(host.Position.ToVector3(), host.Map);
+            FleckMaker.ThrowLightningGlow(host.Position.ToVector3(), host.Map, host.BodySize);
+            SoundDefOf.EnergyShield_AbsorbDamage.PlayOneShot(SoundInfo.InMap(host));
+            HealthUtility.TryAnesthetize(host);
+            return;
+        }
+
         GenExplosion.DoExplosion(host.Position, host.Map, ExplosiveImplant_Def.explosionRadius,
             ExplosiveImplant_Def.damageDef, host);
 

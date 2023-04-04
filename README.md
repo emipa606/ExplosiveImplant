@@ -39,6 +39,4 @@ don't forget to keep a save from before the mod installation.
 -  If you have the solution for a problem, please post it to the GitHub repository.
 
 
-
-
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2162909284]Last updated 2023-02-17
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2162909284]Last updated 2023-04-04

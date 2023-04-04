@@ -38,4 +38,12 @@
       <MarketValue>400</MarketValue>
     </statBases>
   </ThingDef>
+  <ThingDef ParentName="ExplosiveImplantBase">
+    <defName>KnockoutImplant</defName>
+    <label>knockout implant</label>
+    <description>A brain implant that causes the pawn to instantly loose consciousness.</description>
+    <statBases>
+      <MarketValue>270</MarketValue>
+    </statBases>
+  </ThingDef>
 </Defs>

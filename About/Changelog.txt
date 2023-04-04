@@ -1,5 +1,8 @@
 # Changelog for ExplosiveImplant
 
+1.4.3 - Added a knockout implant
+
+
 1.4.2 - Added recipe to uninstall the implants.
 Used DeepL to update translations for ChineseSimplified, French, German, Russian
 
