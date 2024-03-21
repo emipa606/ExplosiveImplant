@@ -31,7 +31,6 @@ internal class Main
 {
     static Main()
     {
-        var harmony = new Harmony("com.ma1ta.Explosive.Implant");
-        harmony.PatchAll(Assembly.GetExecutingAssembly());
+        new Harmony("com.ma1ta.Explosive.Implant").PatchAll(Assembly.GetExecutingAssembly());
     }
 }

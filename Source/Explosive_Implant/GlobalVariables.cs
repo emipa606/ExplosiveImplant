@@ -4,6 +4,6 @@ namespace Explosive_Implant;
 
 internal static class GlobalVariables
 {
-    public static List<HediffWithComps_Explosion> list_obj = new List<HediffWithComps_Explosion>();
-    public static List<bool> pawnIsSelected = new List<bool>();
+    public static readonly List<HediffWithComps_Explosion> list_obj = [];
+    public static readonly List<bool> pawnIsSelected = [];
 }

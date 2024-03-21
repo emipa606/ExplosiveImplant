@@ -1,5 +1,8 @@
 # Changelog for ExplosiveImplant
 
+1.5.0 - Mod updated for 1.5 and passed autotests
+
+
 1.4.3 - Added a knockout implant
 
 

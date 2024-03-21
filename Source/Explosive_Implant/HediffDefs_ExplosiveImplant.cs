@@ -26,6 +26,6 @@ namespace Explosive_Implant;
 
 public class HediffDefs_ExplosiveImplant : HediffDef
 {
+    public readonly float explosionRadius = 5.0f;
     public DamageDef damageDef;
-    public float explosionRadius = 5.0f;
 }
