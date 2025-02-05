@@ -29,49 +29,48 @@ namespace Explosive_Implant;
 
 internal class HediffWithComps_Explosion : HediffWithComps
 {
-    private bool HediffWithComps_toDoAtBeginning;
-
-    public override void Tick()
-    {
-        base.Tick();
-
-        if (HediffWithComps_toDoAtBeginning)
-        {
-            return;
-        }
-
-        GlobalVariables.list_obj.Add(this);
-        HediffWithComps_toDoAtBeginning = true;
-    }
+    public HediffDefs_ExplosiveImplant ExplosiveImplant_Def => def as HediffDefs_ExplosiveImplant;
 
     public void Explode()
     {
-        if (ExplosiveImplant_Def.damageDef == DamageDefOf.Stun)
+        if (pawn.Dead)
         {
-            FleckMaker.ThrowMicroSparks(host.Position.ToVector3(), host.Map);
-            FleckMaker.ThrowLightningGlow(host.Position.ToVector3(), host.Map, host.BodySize);
-            SoundDefOf.EnergyShield_AbsorbDamage.PlayOneShot(SoundInfo.InMap(host));
-            HealthUtility.TryAnesthetize(host);
+            if (ExplosiveImplant_Def.damageDef == DamageDefOf.Stun)
+            {
+                return;
+            }
+
+            GenExplosion.DoExplosion(pawn.PositionHeld, pawn.MapHeld, ExplosiveImplant_Def.explosionRadius,
+                ExplosiveImplant_Def.damageDef, pawn);
+            if (pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).Any())
+            {
+                pawn.health.AddHediff(HediffDefOf.MissingBodyPart,
+                    pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).First());
+            }
+
             return;
         }
 
-        GenExplosion.DoExplosion(host.Position, host.Map, ExplosiveImplant_Def.explosionRadius,
-            ExplosiveImplant_Def.damageDef, host);
-
-        var dInfo = new DamageInfo(ExplosiveImplant_Def.damageDef, 100.0f);
-        host.Kill(dInfo);
-        if (host.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).Any())
+        if (ExplosiveImplant_Def.damageDef == DamageDefOf.Stun)
         {
-            host.health.AddHediff(HediffDefOf.MissingBodyPart,
-                host.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).First());
+            FleckMaker.ThrowMicroSparks(pawn.Position.ToVector3(), pawn.Map);
+            FleckMaker.ThrowLightningGlow(pawn.Position.ToVector3(), pawn.Map, pawn.BodySize);
+            SoundDefOf.EnergyShield_AbsorbDamage.PlayOneShot(SoundInfo.InMap(pawn));
+            HealthUtility.TryAnesthetize(pawn);
+            pawn.health.RemoveHediff(this);
+            return;
         }
+
+        GenExplosion.DoExplosion(pawn.Position, pawn.Map, ExplosiveImplant_Def.explosionRadius,
+            ExplosiveImplant_Def.damageDef, pawn);
+        pawn.Kill(new DamageInfo(ExplosiveImplant_Def.damageDef, 100.0f));
+
+        if (pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).Any())
+        {
+            pawn.health.AddHediff(HediffDefOf.MissingBodyPart,
+                pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).First());
+        }
+
+        pawn.health.RemoveHediff(this);
     }
-
-    #region Properties
-
-    public HediffDefs_ExplosiveImplant ExplosiveImplant_Def => def as HediffDefs_ExplosiveImplant;
-
-    public Pawn host => pawn;
-
-    #endregion Properties
 }

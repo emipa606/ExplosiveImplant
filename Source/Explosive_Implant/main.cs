@@ -20,6 +20,7 @@ or otherwise to promote the sale, use or other dealings in this Software without
 from the <copyright holders>.
 */
 
+using System.Collections.Generic;
 using System.Reflection;
 using HarmonyLib;
 using Verse;
@@ -29,6 +30,9 @@ namespace Explosive_Implant;
 [StaticConstructorOnStartup]
 internal class Main
 {
+    public static readonly List<string> ExplosiveDefs =
+        ["ExplosiveImplant", "AdvancedExplosiveImplant", "KnockoutImplant"];
+
     static Main()
     {
         new Harmony("com.ma1ta.Explosive.Implant").PatchAll(Assembly.GetExecutingAssembly());
