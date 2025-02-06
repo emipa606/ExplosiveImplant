@@ -9,6 +9,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1816673839
 - The explosion should now always remove the pawns head since the implant is in the brain
 - Added an advanced implant with twice the blast-radius
 - Added a knockout implant that instantly sedates the pawn instead
+- Corpses can now also be exploded
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 

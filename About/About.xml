@@ -31,6 +31,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1816673839
 - The explosion should now always remove the pawns head since the implant is in the brain
 - Added an advanced implant with twice the blast-radius
 - Added a knockout implant that instantly sedates the pawn instead
+- Corpses can now also be exploded
 
 [img]https://i.imgur.com/pufA0kM.png[/img]
 
@@ -70,5 +71,5 @@ don't forget to keep a save from before the mod installation.
 [/list] 
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2162909284][img]https://img.shields.io/github/v/release/emipa606/ExplosiveImplant?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags:  brain</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.5.1</modVersion>
+  <modVersion IgnoreIfNoMatchingField="True">1.5.2</modVersion>
 </ModMetaData>
