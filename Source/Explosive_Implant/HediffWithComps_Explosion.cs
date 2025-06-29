@@ -29,7 +29,7 @@ namespace Explosive_Implant;
 
 internal class HediffWithComps_Explosion : HediffWithComps
 {
-    public HediffDefs_ExplosiveImplant ExplosiveImplant_Def => def as HediffDefs_ExplosiveImplant;
+    private HediffDefs_ExplosiveImplant ExplosiveImplant_Def => def as HediffDefs_ExplosiveImplant;
 
     public void Explode()
     {

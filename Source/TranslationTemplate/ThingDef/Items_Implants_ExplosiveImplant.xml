@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: advanced explosive implant -->
+  <AdvancedExplosiveImplant.label>advanced explosive implant</AdvancedExplosiveImplant.label>
+  <!-- EN: A advanced brain implant that violently explode on command. Use with caution. -->
+  <AdvancedExplosiveImplant.description>A advanced brain implant that violently explode on command. Use with caution.</AdvancedExplosiveImplant.description>
+  <!-- EN: explosive implant -->
+  <ExplosiveImplant.label>explosive implant</ExplosiveImplant.label>
+  <!-- EN: A brain implant that explode on command. Use with caution. -->
+  <ExplosiveImplant.description>A brain implant that explode on command. Use with caution.</ExplosiveImplant.description>
+  <!-- EN: knockout implant -->
+  <KnockoutImplant.label>knockout implant</KnockoutImplant.label>
+  <!-- EN: A brain implant that causes the pawn to instantly loose consciousness. -->
+  <KnockoutImplant.description>A brain implant that causes the pawn to instantly loose consciousness.</KnockoutImplant.description>
+</LanguageData>

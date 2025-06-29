@@ -10,6 +10,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1816673839
 - Added an advanced implant with twice the blast-radius
 - Added a knockout implant that instantly sedates the pawn instead
 - Corpses can now also be exploded
+- Slaves with an explosive implant will always have 100% terror
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 

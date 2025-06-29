@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: install advanced explosive implant -->
+  <InstallAdvancedExplosiveImplant.label>install advanced explosive implant</InstallAdvancedExplosiveImplant.label>
+  <!-- EN: Installs advanced explosive implant. -->
+  <InstallAdvancedExplosiveImplant.description>Installs advanced explosive implant.</InstallAdvancedExplosiveImplant.description>
+  <!-- EN: Installing advanced explosive implant. -->
+  <InstallAdvancedExplosiveImplant.jobString>Installing advanced explosive implant.</InstallAdvancedExplosiveImplant.jobString>
+  <!-- EN: install explosive implant -->
+  <InstallExplosiveImplant.label>install explosive implant</InstallExplosiveImplant.label>
+  <!-- EN: Installs explosive implant. -->
+  <InstallExplosiveImplant.description>Installs explosive implant.</InstallExplosiveImplant.description>
+  <!-- EN: Installing explosive implant. -->
+  <InstallExplosiveImplant.jobString>Installing explosive implant.</InstallExplosiveImplant.jobString>
+  <!-- EN: install knockout implant -->
+  <InstallKnockoutImplant.label>install knockout implant</InstallKnockoutImplant.label>
+  <!-- EN: Installs knockout implant. -->
+  <InstallKnockoutImplant.description>Installs knockout implant.</InstallKnockoutImplant.description>
+  <!-- EN: Installing knockout implant. -->
+  <InstallKnockoutImplant.jobString>Installing knockout implant.</InstallKnockoutImplant.jobString>
+  <!-- EN: uninstall advanced explosive implant -->
+  <UnInstallAdvancedExplosiveImplant.label>uninstall advanced explosive implant</UnInstallAdvancedExplosiveImplant.label>
+  <!-- EN: Uninstalls advanced explosive implant. -->
+  <UnInstallAdvancedExplosiveImplant.description>Uninstalls advanced explosive implant.</UnInstallAdvancedExplosiveImplant.description>
+  <!-- EN: Uninstalling advanced explosive implant. -->
+  <UnInstallAdvancedExplosiveImplant.jobString>Uninstalling advanced explosive implant.</UnInstallAdvancedExplosiveImplant.jobString>
+  <!-- EN: uninstall explosive implant -->
+  <UnInstallExplosiveImplant.label>uninstall explosive implant</UnInstallExplosiveImplant.label>
+  <!-- EN: Uninstalls explosive implant. -->
+  <UnInstallExplosiveImplant.description>Uninstalls explosive implant.</UnInstallExplosiveImplant.description>
+  <!-- EN: Uninstalling explosive implant. -->
+  <UnInstallExplosiveImplant.jobString>Uninstalling explosive implant.</UnInstallExplosiveImplant.jobString>
+  <!-- EN: uninstall knockout implant -->
+  <UnInstallKnockoutImplant.label>uninstall knockout implant</UnInstallKnockoutImplant.label>
+  <!-- EN: Uninstalls knockout implant. -->
+  <UnInstallKnockoutImplant.description>Uninstalls knockout implant.</UnInstallKnockoutImplant.description>
+  <!-- EN: Uninstalling knockout implant. -->
+  <UnInstallKnockoutImplant.jobString>Uninstalling knockout implant.</UnInstallKnockoutImplant.jobString>
+</LanguageData>

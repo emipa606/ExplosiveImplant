@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="ExplosiveImplantBase" ParentName="BodyPartBase" Abstract="True">
+    <techLevel>Industrial</techLevel>
+    <thingCategories>
+      <li>BodyPartsProsthetic</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(154,124,104)</color>
+    </graphicData>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>0.2</Mass>
+    </statBases>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+  </ThingDef>
+  <ThingDef ParentName="ExplosiveImplantBase">
+    <defName>ExplosiveImplant</defName>
+    <label>explosive implant</label>
+    <description>A brain implant that explode on command. Use with caution.</description>
+    <statBases>
+      <MarketValue>200</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="ExplosiveImplantBase">
+    <defName>AdvancedExplosiveImplant</defName>
+    <label>advanced explosive implant</label>
+    <description>A advanced brain implant that violently explode on command. Use with caution.</description>
+    <statBases>
+      <MarketValue>400</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="ExplosiveImplantBase">
+    <defName>KnockoutImplant</defName>
+    <label>knockout implant</label>
+    <description>A brain implant that causes the pawn to instantly loose consciousness.</description>
+    <statBases>
+      <MarketValue>270</MarketValue>
+    </statBases>
+  </ThingDef>
+</Defs>

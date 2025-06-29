@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Make an advanced explosive implant -->
+  <MakeAdvancedExplosiveImplant.label>Make an advanced explosive implant</MakeAdvancedExplosiveImplant.label>
+  <!-- EN: Make an advanced explosive implant. -->
+  <MakeAdvancedExplosiveImplant.description>Make an advanced explosive implant.</MakeAdvancedExplosiveImplant.description>
+  <!-- EN: Making an advanced explosive implant. -->
+  <MakeAdvancedExplosiveImplant.jobString>Making an advanced explosive implant.</MakeAdvancedExplosiveImplant.jobString>
+  <!-- EN: Make an explosive implant -->
+  <MakeExplosiveImplant.label>Make an explosive implant</MakeExplosiveImplant.label>
+  <!-- EN: Make an explosive implant. -->
+  <MakeExplosiveImplant.description>Make an explosive implant.</MakeExplosiveImplant.description>
+  <!-- EN: Making an explosive implant. -->
+  <MakeExplosiveImplant.jobString>Making an explosive implant.</MakeExplosiveImplant.jobString>
+  <!-- EN: Make a knockout implant -->
+  <MakeKnockoutImplant.label>Make a knockout implant</MakeKnockoutImplant.label>
+  <!-- EN: Make a knockout implant. -->
+  <MakeKnockoutImplant.description>Make a knockout implant.</MakeKnockoutImplant.description>
+  <!-- EN: Making a knockout implant. -->
+  <MakeKnockoutImplant.jobString>Making a knockout implant.</MakeKnockoutImplant.jobString>
+</LanguageData>

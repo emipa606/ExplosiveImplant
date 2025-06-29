@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: advanced explosive implant -->
+  <AdvancedExplosiveImplant.label>advanced explosive implant</AdvancedExplosiveImplant.label>
+  <!-- EN: advanced explosive implant -->
+  <AdvancedExplosiveImplant.description>advanced explosive implant</AdvancedExplosiveImplant.description>
+  <!-- EN: an advanced explosive implant -->
+  <AdvancedExplosiveImplant.labelNoun>an advanced explosive implant</AdvancedExplosiveImplant.labelNoun>
+  <!-- EN: explosive implant -->
+  <ExplosiveImplant.label>explosive implant</ExplosiveImplant.label>
+  <!-- EN: explosive implant -->
+  <ExplosiveImplant.description>explosive implant</ExplosiveImplant.description>
+  <!-- EN: an explosive implant -->
+  <ExplosiveImplant.labelNoun>an explosive implant</ExplosiveImplant.labelNoun>
+  <!-- EN: knockout implant -->
+  <KnockoutImplant.label>knockout implant</KnockoutImplant.label>
+  <!-- EN: knockout implant -->
+  <KnockoutImplant.description>knockout implant</KnockoutImplant.description>
+  <!-- EN: a knockout implant -->
+  <KnockoutImplant.labelNoun>a knockout implant</KnockoutImplant.labelNoun>
+</LanguageData>

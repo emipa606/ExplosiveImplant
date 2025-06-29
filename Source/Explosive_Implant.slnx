@@ -1,0 +1,6 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Release" />
+  </Configurations>
+  <Project Path="Explosive_Implant/Explosive_Implant.csproj" />
+</Solution>
