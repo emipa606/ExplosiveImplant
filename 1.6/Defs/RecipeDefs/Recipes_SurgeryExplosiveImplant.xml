@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallTinyExplosiveImplant</defName>
+    <label>install tiny explosive implant</label>
+    <description>Installs tiny explosive implant.</description>
+    <jobString>Installing tiny explosive implant.</jobString>
+    <surgerySuccessChanceFactor>1</surgerySuccessChanceFactor>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <recipeUsers>
+      <li>Human</li>
+      <li>Cat</li>
+    </recipeUsers>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <workAmount>1700</workAmount>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TinyExplosiveImplant</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>TinyExplosiveImplant</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>TinyExplosiveImplant</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
     <defName>InstallExplosiveImplant</defName>
     <label>install explosive implant</label>
     <description>Installs explosive implant.</description>

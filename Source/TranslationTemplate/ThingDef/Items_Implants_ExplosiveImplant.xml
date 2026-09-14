@@ -12,4 +12,8 @@
   <KnockoutImplant.label>knockout implant</KnockoutImplant.label>
   <!-- EN: A brain implant that causes the pawn to instantly loose consciousness. -->
   <KnockoutImplant.description>A brain implant that causes the pawn to instantly loose consciousness.</KnockoutImplant.description>
+  <!-- EN: tiny explosive implant -->
+  <TinyExplosiveImplant.label>tiny explosive implant</TinyExplosiveImplant.label>
+  <!-- EN: A tiny brain implant that explode on command. Use with caution. -->
+  <TinyExplosiveImplant.description>A tiny brain implant that explode on command. Use with caution.</TinyExplosiveImplant.description>
 </LanguageData>

@@ -18,6 +18,12 @@
   <InstallKnockoutImplant.description>Installs knockout implant.</InstallKnockoutImplant.description>
   <!-- EN: Installing knockout implant. -->
   <InstallKnockoutImplant.jobString>Installing knockout implant.</InstallKnockoutImplant.jobString>
+  <!-- EN: install tiny explosive implant -->
+  <InstallTinyExplosiveImplant.label>install tiny explosive implant</InstallTinyExplosiveImplant.label>
+  <!-- EN: Installs tiny explosive implant. -->
+  <InstallTinyExplosiveImplant.description>Installs tiny explosive implant.</InstallTinyExplosiveImplant.description>
+  <!-- EN: Installing tiny explosive implant. -->
+  <InstallTinyExplosiveImplant.jobString>Installing tiny explosive implant.</InstallTinyExplosiveImplant.jobString>
   <!-- EN: uninstall advanced explosive implant -->
   <UnInstallAdvancedExplosiveImplant.label>uninstall advanced explosive implant</UnInstallAdvancedExplosiveImplant.label>
   <!-- EN: Uninstalls advanced explosive implant. -->

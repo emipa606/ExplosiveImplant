@@ -18,4 +18,10 @@
   <MakeKnockoutImplant.description>Make a knockout implant.</MakeKnockoutImplant.description>
   <!-- EN: Making a knockout implant. -->
   <MakeKnockoutImplant.jobString>Making a knockout implant.</MakeKnockoutImplant.jobString>
+  <!-- EN: Make a tiny explosive implant -->
+  <MakeTinyExplosiveImplant.label>Make a tiny explosive implant</MakeTinyExplosiveImplant.label>
+  <!-- EN: Make a tiny explosive implant. -->
+  <MakeTinyExplosiveImplant.description>Make a tiny explosive implant.</MakeTinyExplosiveImplant.description>
+  <!-- EN: Making a tiny explosive implant. -->
+  <MakeTinyExplosiveImplant.jobString>Making a tiny explosive implant.</MakeTinyExplosiveImplant.jobString>
 </LanguageData>

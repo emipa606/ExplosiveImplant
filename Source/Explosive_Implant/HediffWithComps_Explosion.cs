@@ -40,13 +40,25 @@ internal class HediffWithComps_Explosion : HediffWithComps
                 return;
             }
 
-            GenExplosion.DoExplosion(pawn.PositionHeld, pawn.MapHeld, ExplosiveImplant_Def.explosionRadius,
-                ExplosiveImplant_Def.damageDef, pawn);
-            if (pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).Any())
+            if (ExplosiveImplant_Def.explosionRadius == 0)
             {
-                pawn.health.AddHediff(HediffDefOf.MissingBodyPart,
-                    pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).First());
+                SoundDefOf.BulletImpact_Ground.PlayOneShot(SoundInfo.InMap(pawn));
+                FleckMaker.ThrowExplosionInterior(pawn.DrawPos, pawn.MapHeld, FleckDefOf.ExplosionFlash);
             }
+            else
+            {
+                GenExplosion.DoExplosion(pawn.PositionHeld, pawn.MapHeld, ExplosiveImplant_Def.explosionRadius,
+                    ExplosiveImplant_Def.damageDef, pawn);
+            }
+
+            if (!pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).Any())
+            {
+                return;
+            }
+
+            pawn.health.AddHediff(HediffDefOf.MissingBodyPart,
+                pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).First());
+            FilthMaker.TryMakeFilth(pawn.PositionHeld, pawn.MapHeld, pawn.RaceProps.BloodDef);
 
             return;
         }
@@ -61,14 +73,23 @@ internal class HediffWithComps_Explosion : HediffWithComps
             return;
         }
 
-        GenExplosion.DoExplosion(pawn.Position, pawn.Map, ExplosiveImplant_Def.explosionRadius,
-            ExplosiveImplant_Def.damageDef, pawn);
+        if (ExplosiveImplant_Def.explosionRadius == 0)
+        {
+            FleckMaker.ThrowExplosionInterior(pawn.DrawPos, pawn.Map, FleckDefOf.ExplosionFlash);
+        }
+        else
+        {
+            GenExplosion.DoExplosion(pawn.Position, pawn.Map, ExplosiveImplant_Def.explosionRadius,
+                ExplosiveImplant_Def.damageDef, pawn);
+        }
+
         pawn.Kill(new DamageInfo(ExplosiveImplant_Def.damageDef, 100.0f));
 
         if (pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).Any())
         {
             pawn.health.AddHediff(HediffDefOf.MissingBodyPart,
                 pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).First());
+            FilthMaker.TryMakeFilth(pawn.PositionHeld, pawn.MapHeld, pawn.RaceProps.BloodDef);
         }
 
         pawn.health.RemoveHediff(this);

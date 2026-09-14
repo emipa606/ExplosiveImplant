@@ -33,6 +33,22 @@
           <value>
             <AchievementsExpanded.AchievementDef ParentName="Mlie_AchievementParent">
               <defName>EI_NowhereToRun</defName>
+              <label>Panic</label>
+              <description>Have one pawn fitted with a Tiny Explosive Implant</description>
+              <tracker Class="AchievementsExpanded.HediffTracker">
+                <def>TinyExplosiveImplant</def>
+                <count>1</count>
+              </tracker>
+              <texPath>Achievements/EI_Panic</texPath>
+              <points>10</points>
+            </AchievementsExpanded.AchievementDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <AchievementsExpanded.AchievementDef ParentName="Mlie_AchievementParent">
+              <defName>EI_NowhereToRun</defName>
               <label>Nowhere To Run</label>
               <description>Have one pawn fitted with an Explosive Implant</description>
               <tracker Class="AchievementsExpanded.HediffTracker">

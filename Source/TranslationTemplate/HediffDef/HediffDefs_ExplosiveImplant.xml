@@ -18,4 +18,10 @@
   <KnockoutImplant.description>knockout implant</KnockoutImplant.description>
   <!-- EN: a knockout implant -->
   <KnockoutImplant.labelNoun>a knockout implant</KnockoutImplant.labelNoun>
+  <!-- EN: tiny explosive implant -->
+  <TinyExplosiveImplant.label>tiny explosive implant</TinyExplosiveImplant.label>
+  <!-- EN: tiny explosive implant -->
+  <TinyExplosiveImplant.description>tiny explosive implant</TinyExplosiveImplant.description>
+  <!-- EN: a tiny explosive implant -->
+  <TinyExplosiveImplant.labelNoun>a tiny explosive implant</TinyExplosiveImplant.labelNoun>
 </LanguageData>

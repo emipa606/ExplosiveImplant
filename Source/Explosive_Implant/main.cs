@@ -31,7 +31,7 @@ namespace Explosive_Implant;
 internal class Main
 {
     public static readonly List<string> ExplosiveDefs =
-        ["ExplosiveImplant", "AdvancedExplosiveImplant", "KnockoutImplant"];
+        ["TinyExplosiveImplant", "ExplosiveImplant", "AdvancedExplosiveImplant", "KnockoutImplant"];
 
     static Main()
     {

@@ -23,6 +23,14 @@
     </techHediffsTags>
   </ThingDef>
   <ThingDef ParentName="ExplosiveImplantBase">
+    <defName>TinyExplosiveImplant</defName>
+    <label>tiny explosive implant</label>
+    <description>A tiny brain implant that explode on command. Use with caution.</description>
+    <statBases>
+      <MarketValue>100</MarketValue>
+    </statBases>
+  </ThingDef>
+  <ThingDef ParentName="ExplosiveImplantBase">
     <defName>ExplosiveImplant</defName>
     <label>explosive implant</label>
     <description>A brain implant that explode on command. Use with caution.</description>

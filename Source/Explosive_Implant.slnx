@@ -3,4 +3,29 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="Explosive_Implant/Explosive_Implant.csproj" />
+  <Folder Name="/.github/">
+    <File Path="../.github/copilot-instructions.md" />
+  </Folder>
+  <Folder Name="/XML/Languages/English/Keyed/">
+    <File Path="../Languages/English/Keyed/Mod_Settings.xml" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ThingDefs_Items/">
+    <File Path="../1.6/Defs/ThingDefs_Items/Items_Implants_ExplosiveImplant.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/HediffDefs/">
+    <File Path="../1.6/Defs/HediffDefs/HediffDefs_ExplosiveImplant.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Patches/">
+    <File Path="../1.6/Patches/Achievements.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/RecipeDefs/">
+    <File Path="../1.6/Defs/RecipeDefs/Recipes_ExplosiveImplant.xml" />
+    <File Path="../1.6/Defs/RecipeDefs/Recipes_SurgeryExplosiveImplant.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ThoughtDefs/">
+    <File Path="../1.6/Defs/ThoughtDefs/Thought_Situation_ExplosiveImplant.xml" />
+  </Folder>
 </Solution>
