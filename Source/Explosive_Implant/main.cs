@@ -28,7 +28,7 @@ using Verse;
 namespace Explosive_Implant;
 
 [StaticConstructorOnStartup]
-internal class Main
+internal static class Main
 {
     public static readonly List<string> ExplosiveDefs =
         ["TinyExplosiveImplant", "ExplosiveImplant", "AdvancedExplosiveImplant", "KnockoutImplant"];

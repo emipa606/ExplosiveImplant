@@ -20,7 +20,6 @@ or otherwise to promote the sale, use or other dealings in this Software without
 from the <copyright holders>.
 */
 
-using System.Linq;
 using RimWorld;
 using Verse;
 using Verse.Sound;
@@ -57,7 +56,7 @@ internal class HediffWithComps_Explosion : HediffWithComps
             }
 
             pawn.health.AddHediff(HediffDefOf.MissingBodyPart,
-                pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).First());
+                pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Head)[0]);
             FilthMaker.TryMakeFilth(pawn.PositionHeld, pawn.MapHeld, pawn.RaceProps.BloodDef);
 
             return;
@@ -88,7 +87,7 @@ internal class HediffWithComps_Explosion : HediffWithComps
         if (pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).Any())
         {
             pawn.health.AddHediff(HediffDefOf.MissingBodyPart,
-                pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Head).First());
+                pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Head)[0]);
             FilthMaker.TryMakeFilth(pawn.PositionHeld, pawn.MapHeld, pawn.RaceProps.BloodDef);
         }
 

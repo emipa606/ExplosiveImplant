@@ -12,20 +12,20 @@
   <Folder Name="/XML/About/">
     <File Path="../About/about.xml" />
   </Folder>
-  <Folder Name="/XML/1.6/Defs/ThingDefs_Items/">
-    <File Path="../1.6/Defs/ThingDefs_Items/Items_Implants_ExplosiveImplant.xml" />
+  <Folder Name="/XML/1.7/Defs/ThoughtDefs/">
+    <File Path="../1.7/Defs/ThoughtDefs/Thought_Situation_ExplosiveImplant.xml" />
   </Folder>
-  <Folder Name="/XML/1.6/Defs/HediffDefs/">
-    <File Path="../1.6/Defs/HediffDefs/HediffDefs_ExplosiveImplant.xml" />
+  <Folder Name="/XML/1.7/Defs/HediffDefs/">
+    <File Path="../1.7/Defs/HediffDefs/HediffDefs_ExplosiveImplant.xml" />
   </Folder>
-  <Folder Name="/XML/1.6/Patches/">
-    <File Path="../1.6/Patches/Achievements.xml" />
+  <Folder Name="/XML/1.7/Defs/RecipeDefs/">
+    <File Path="../1.7/Defs/RecipeDefs/Recipes_ExplosiveImplant.xml" />
+    <File Path="../1.7/Defs/RecipeDefs/Recipes_SurgeryExplosiveImplant.xml" />
   </Folder>
-  <Folder Name="/XML/1.6/Defs/RecipeDefs/">
-    <File Path="../1.6/Defs/RecipeDefs/Recipes_ExplosiveImplant.xml" />
-    <File Path="../1.6/Defs/RecipeDefs/Recipes_SurgeryExplosiveImplant.xml" />
+  <Folder Name="/XML/1.7/Defs/ThingDefs_Items/">
+    <File Path="../1.7/Defs/ThingDefs_Items/Items_Implants_ExplosiveImplant.xml" />
   </Folder>
-  <Folder Name="/XML/1.6/Defs/ThoughtDefs/">
-    <File Path="../1.6/Defs/ThoughtDefs/Thought_Situation_ExplosiveImplant.xml" />
+  <Folder Name="/XML/1.7/Patches/">
+    <File Path="../1.7/Patches/Achievements.xml" />
   </Folder>
 </Solution>
